@@ -4,6 +4,16 @@ from datetime import datetime as dt
 
 
 def sequential_search(search_list, term=-1):
+    """This function, sequential_search will search through a sequential list.
+
+                    Args:
+                        search_list holds a list of sequential numbers
+
+                    Returns:
+                        Returns returns the index of the number we are
+                        searching for or returns none.
+
+            """
     for index in range(len(search_list)):
         if search_list[index] == -1:
             return index
@@ -11,6 +21,17 @@ def sequential_search(search_list, term=-1):
 
 
 def ordered_sequential_search(search_list, term=-1):
+    """This function, ordered_sequential_search will search through an ordered
+        sequential list.
+
+                    Args:
+                        search_list holds a list of sequential numbers
+
+                    Returns:
+                        Returns returns the index of the number we are
+                        searching for or returns none.
+
+            """
     for index in range(len(search_list)):
         if search_list[index] == -1:
             return index
@@ -18,6 +39,17 @@ def ordered_sequential_search(search_list, term=-1):
 
 
 def binary_search_iterative(search_list, elem=-1):
+    """This function called binary_search_iterative will search by dividing a
+        list in half, checking the number and repeating the process.
+
+                    Args:
+                        search_list holds a list of sequential numbers
+
+                    Returns:
+                        Returns returns the index of the number we are
+                        searching for or returns none.
+
+            """
     left_bound = 0
     right_bound = len(search_list) - 1
     mid = (left_bound + right_bound) / 2
@@ -37,6 +69,17 @@ def binary_search_iterative(search_list, elem=-1):
 
 
 def binary_search_recursive(search_list, term=-1):
+    """This function called binary_search_recursive will search by dividing a
+        list in half, and recalling the function until number is found.
+
+                    Args:
+                        search_list holds a list of sequential numbers
+
+                    Returns:
+                        Returns returns the index of the number we are
+                        searching for or returns none.
+
+            """
     if len(search_list) == 0:
         return None
 

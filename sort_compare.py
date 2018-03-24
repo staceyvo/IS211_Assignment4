@@ -3,6 +3,15 @@ import random
 
 
 def insertion_sort(sort_list):
+    """This function, insertion_sort will sort a list.
+
+                        Args:
+                            sort_list holds a list of random numbers
+
+                        Returns:
+                            Returns an ordered list.
+
+                """
     for index in range(len(sort_list)):
         for left in range(index):
             if sort_list[index] < sort_list[left]:
@@ -14,6 +23,15 @@ def insertion_sort(sort_list):
 
 
 def shell_sort(sort_list):
+    """This function, shell_sort will sort a list.
+
+                        Args:
+                            sort_list holds a list of random numbers
+
+                        Returns:
+                            Returns an ordered list.
+
+                """
     gap = len(sort_list) / 2
     #creates multiple passes through list
     while gap > 0:
